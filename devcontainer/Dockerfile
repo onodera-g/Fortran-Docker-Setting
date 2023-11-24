@@ -11,3 +11,6 @@ RUN sudo apt install cmake -y
 RUN  pip install -U pip
 RUN pip install --upgrade --force-reinstall fypp
 RUN sudo apt-get install build-essential -y
+ RUN echo 'PATH="$PATH:/usr/local/include"' >> ~/.bashrc
+  RUN echo 'PATH="$PATH: /usr/local/lib"' >> ~/.bashrc
+ # source ~/.bashrc
